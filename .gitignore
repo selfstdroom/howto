@@ -1,0 +1,9 @@
+﻿# Hugo build artifacts
+/public/
+/resources/
+.hugo_build.lock
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
