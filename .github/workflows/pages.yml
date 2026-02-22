@@ -31,7 +31,14 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo --minify --config hugo.yaml --destination public
+
+      - name: Debug - list public
+        run: |
+          echo "=== ls -la public ==="
+          ls -la public
+          echo "=== find public (top 200) ==="
+          find public -type f | head -n 200
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -48,4 +55,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+
 
