@@ -1,4 +1,4 @@
-name: Deploy Hugo site to Pages
+﻿name: Deploy Hugo site to Pages
 
 on:
   push:
@@ -48,3 +48,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
