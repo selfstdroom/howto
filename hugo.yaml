@@ -13,3 +13,8 @@ outputs:
   home: ["HTML"]
   section: ["HTML"]
   page: ["HTML"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
