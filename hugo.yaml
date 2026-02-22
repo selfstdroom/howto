@@ -1,20 +1,23 @@
 ﻿baseURL: "https://selfstdroom.github.io/howto/"
+languageCode: "ja"
 title: "オンライン自習室"
 theme: "hugo-book"
-languageCode: "ja"
-DefaultContentLanguage: "ja"
 
-params:
-  BookTheme: "light"
-  BookToC: true
-  BookSearch: true
+# GitHub Pages: /docs フォルダに静的ファイルを出す
+publishDir: "docs"
 
+# ホームを必ずHTMLで出す（RSS/index.xmlがホーム扱いになる事故を防ぐ）
 outputs:
   home: ["HTML"]
   section: ["HTML"]
-  page: ["HTML"]
+  taxonomy: ["HTML"]
+  term: ["HTML"]
 
+# あなたのカードUI用のHTMLを許可（警告も消える）
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+# 余計なRSS等を基本出さない（必要なら後で増やす）
+disableKinds: ["RSS", "sitemap", "taxonomyTerm"]
