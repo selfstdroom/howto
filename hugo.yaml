@@ -1,13 +1,15 @@
-baseURL: "https://selfstdroom.github.io/howto/"
-languageCode: "ja"
+﻿baseURL: "https://selfstdroom.github.io/howto/"
 title: "オンライン自習室"
 theme: "hugo-book"
+languageCode: "ja"
+DefaultContentLanguage: "ja"
 
 params:
-  BookTheme: "auto"   # auto / light / dark
-  BookSearch: true
+  BookTheme: "light"
   BookToC: true
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
+  BookSearch: true
+
+outputs:
+  home: ["HTML"]
+  section: ["HTML"]
+  page: ["HTML"]
