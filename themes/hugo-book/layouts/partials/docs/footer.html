@@ -1,5 +1,5 @@
-<div class="flex justify-between">
-{{ if .Site.IsMultiLingual }}
+﻿<div class="flex justify-between">
+{{ if hugo.IsMultilingual }}
   {{ partial "docs/languages" . }}
 {{ end }}
 
@@ -22,3 +22,4 @@
   </div>
 {{ end }}
 </div>
+

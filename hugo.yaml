@@ -20,4 +20,5 @@ markup:
       unsafe: true
 
 # 余計なRSS等を基本出さない（必要なら後で増やす）
-disableKinds: ["RSS", "sitemap", "taxonomyTerm"]
+disableKinds: ["RSS", "sitemap", "taxonomy"]
+

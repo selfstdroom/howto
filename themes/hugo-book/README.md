@@ -1,4 +1,4 @@
-# Hugo Book Theme
+﻿# Hugo Book Theme
 
 [![Hugo](https://img.shields.io/badge/hugo-0.65-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -76,13 +76,13 @@ You can also use leaf bundle and content of it's `index.md` as menu.
 Given you have this file structure
 
 ```
-├── content
-│   ├── docs
-│   │   ├── page-one.md
-│   │   └── page-two.md
-│   └── posts
-│       ├── post-one.md
-│       └── post-two.md
+笏懌楳笏 content
+笏・  笏懌楳笏 docs
+笏・  笏・  笏懌楳笏 page-one.md
+笏・  笏・  笏披楳笏 page-two.md
+笏・  笏披楳笏 posts
+笏・      笏懌楳笏 post-one.md
+笏・      笏披楳笏 post-two.md
 ```
 
 Create file `content/docs/menu/index.md` with content
@@ -134,7 +134,7 @@ enableGitInfo = true
 
 # (Optional) Theme is intended for documentation use, therefore it doesn't render taxonomy.
 # You can remove related files with config below
-disableKinds = ['taxonomy', 'taxonomyTerm']
+disableKinds = ['taxonomy', 'taxonomy']
   
 [params]
   # (Optional, default true) Controls table of contents visibility on right side of pages.
@@ -287,3 +287,4 @@ Primary goals are:
 - Avoid using JS if it can be solved by CSS.
 
 Feel free to open issue if you missing some configuration or customisation option.
+
